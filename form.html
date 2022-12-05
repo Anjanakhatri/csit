@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <script>
+        function validateform(){
+            debugger;
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+            var phone = document.myform.phone.value;
+            var email = document.myform.email.value;
+            var regexp = /\S+@\S+/;
+        if (name==null||name==""){
+            alert("Name can't be blank");
+            return false;
+        }
+        else if(phone==null||phone==""){
+            alert("phone number can't be blank");
+        }
+        else if(isNaN(phone)){
+            alert("enter numerical value only");
+        }
+        else if(email==null||email==""){
+            a
+            alert("email id can't be blank");
+        }
+        else if(regexp.test(String(email).toLowerCase())== false){
+            alert("enter valid email id:username@domain.com");
+        }
+        else if(password.length<6){
+            alert("password must be at least 6 characters");
+            return false;
+        }
+    
+        }
+        
+    </script>
+</head>
+<body>
+        <form name="myform" method="post"
+        onsubmit="return(validateform());">
+        Name:<input type="text" name="name"> <br/>
+        Phone:<input type="text" name="phone"><br/>
+        Email:<input type="text" name="email"><br/>
+        Password:<input type="password" name="password"><br/>
+        <input type="submit"  value="register" >
+    </form>
+    
+    
+</body>
+</html>
