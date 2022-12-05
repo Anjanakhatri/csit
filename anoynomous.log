@@ -1,0 +1,30 @@
+var showMess
+undefined
+var showMessage=function(){
+    alert("Hellow World!");
+};
+undefined
+showMessaage 
+VM406:1 Uncaught ReferenceError: showMessaage is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM406:1
+showMessaage 
+VM410:1 Uncaught ReferenceError: showMessaage is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM410:1
+showMessage
+ƒ (){
+    alert("Hellow World!");
+}
+var showMessage=function(){
+    alert("Hello World!");
+};
+undefined
+var sayHello=function(firstName){
+    alert("Hello "+ firstName);
+};
+undefined
+showMessage();
+undefined
+sayHello("bill");
+undefined
